@@ -6,9 +6,10 @@ what i have done:
 - download homebrew
 - download python conda
 - check that PIL (python image library) is downloaded in the correct version
+- choose an image
+    - in darkpixels directory
 
 what i still need to do:
-- choose an image
 - extract all pixel values from the image and store in a list
 - for loop through the list to find the two darkest pixels
     - store these two pixels in an array
