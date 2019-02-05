@@ -25,6 +25,7 @@ what i still need to do:
 - celebrate!
 
 some websites i have gotten help from:
+
     - https://code.tutsplus.com/tutorials/image-processing-using-python--cms-25772?fbclid=IwAR37XgqfY6xdMTNvbANny-JpNbKkhTR-okyZfaOyr9ZLN2dzjPRfgu4PSC8
     
     - https://snakify.org/en/lessons/two_dimensional_lists_arrays/?fbclid=IwAR067q-IIZ48JLFvBWerOU9rF3fUC55nlem5ZNO5ofRqM1b8gD-kCIB-290
