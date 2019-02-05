@@ -8,6 +8,7 @@ what i have done:
 - check that PIL (python image library) is downloaded in the correct version
 - choose an image
     - in darkpixels directory
+- loaded in image to do more cool stuff with!
 
 what i still need to do:
 - extract all pixel values from the image and store in a list
