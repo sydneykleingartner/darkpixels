@@ -17,5 +17,10 @@ def main ():
 	#create a list that is filled with the values stored in the pixels in the image
 	pixel_values =  list(image.getdata())
 	
+	#print out list (error/format checking)
+	#can comment the for loop out in order to de-clutter
+	for x in range(len(pixel_values)):
+		print pixel_values[x],	
+
 if __name__ == '__main__':
 	main ()
