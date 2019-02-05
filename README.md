@@ -13,6 +13,9 @@ what i have done:
 - step2.py
     - extract all pixel values from the image and store in a list
     - print out the for loop for formatting checking 
+- step3.py
+    - initialize variables and for loops
+    - overall strategy for step 3
 
 what i still need to do:  
 - step3.py
