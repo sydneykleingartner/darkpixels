@@ -36,5 +36,22 @@ def main ():
 
 	#STEP 3
 
+	#sum variable adds up the RGB values of each pixel
+	sum = 0	
+
+	#comparison variable against sum
+	smallest_and_darkest = 0;
+
+	#list of the two darkest pixels
+	darkest_pixels = []
+
+	#for loop through the three dimensions already stored for each pixel
+	#compare values using the sum variable
+	for i in range(len(pixel_values)):
+		for j in range(len(pixel_values)):
+			for k in range(len(pixel_values)):
+				#sum is equal to the three values for that pixel added together
+				sum = pixel_values[i][j][k]
+
 if __name__ == '__main__':
 	main ()
