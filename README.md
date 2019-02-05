@@ -17,8 +17,7 @@ what i have done:
 what i still need to do:  
 - step3.py
     - for loop through the list to find the two darkest pixels
-    - store these two pixels in an array
-    - the pixels cannot be next to each other
+    - store these two pixels (that are not next to each other) in an array
     - for each, replace the color of that specific pixel with red
     - as well, place the X's around each
       - in the two dimensional array that the pixels are stored in, place red at the pixels around it to form an X
