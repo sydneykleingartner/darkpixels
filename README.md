@@ -40,3 +40,21 @@ some websites i have gotten help from:
     - https://developers.google.com/edu/python/lists
     
     - https://www.programiz.com/python-programming/list
+    
+    
+   current questions:
+        - how do i reference one specific value in a pixel?
+                ex. we print out the three numbers in (124, 127, 135) BUT what i specifically wanted to reference 124?
+        - storing the second best pixel
+                - what is the best way to do this? most efficient versus least complicated (both are pretty complicated in my brain right now though)
+                        - using two for loops feels quite inefficient
+                            - you would need to scan through the sums to find the minimum and then scan through again looking for the second smallest sum, meanwhile storing these in an effective way
+                
+    brainstorming:
+        - if the darker the pixel, the smaller the sum of the numbers
+                THEN: 
+                    - add together the #'s in the pixel
+                    - find the two smallest sums
+                            - would this always work? or is it close enough for now?
+   
+   
