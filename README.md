@@ -21,6 +21,9 @@ what i still need to do:
 - step3.py
     - for loop through the list to find the two darkest pixels
     - store these two pixels (that are not next to each other) in an array
+            -i'm having SO much trouble with this -> would it be more efficient to go through looking for the darkest first and then the second darkest?
+            -how do i know that the two pixels aren't next to each other?
+            -need to work more on python list syntax & function
     - for each, replace the color of that specific pixel with red
     - as well, place the X's around each
       - in the two dimensional array that the pixels are stored in, place red at the pixels around it to form an X
