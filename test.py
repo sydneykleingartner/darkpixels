@@ -1,4 +1,6 @@
 from PIL import Image
+from scipy import ndimage
+from scipy import misc
 #step 3
 
 #for loop through the list
@@ -18,14 +20,8 @@ from PIL import Image
 			#in the three dimensional array that the pixels are stored in, place red at the pixels around the "darkest" ones to form an X
 
 def main ():
-	#STEP ONE
-	#importing the Image module of PIL
-
-
-	#creating Image object
-	#opening the image for reading mode
-	# image = Image.open('grace-hopper.png', 'r')
-	image = Image.open('teeny.png', 'r')
+	image = Image.open('color_teeny_2.png', 'r')
+	
 	
 	#STEP TWO
 	#create a list that is filled with the values stored in the pixels in the image
@@ -33,61 +29,33 @@ def main ():
 	
 	#print out list (error/format checking)
 	#can comment the for loop out in order to de-clutter
-	for x in range(len(pixel_values)):
-		print pixel_values[x]	
+	print(pixel_values)
+	# for x in range(len(pixel_values)):
+	# 	print str(pixel_values[x][0]) + " "	+  str(pixel_values[x][1]) + " " + str(pixel_values[x][2])
 
-	#STEP THREE
-	#sum variable adds up the RGB values of each pixel
-	sumup = 0	
+	# sumup = 0	
 
 	#comparison variable against sum
 	#assign to the first pixel's sum
-	smallest_and_darkest = pixel_values[0][0][0] + pixel_values[0][0][1] + pixel_values[0][0][2]
+	smallest_and_darkest = pixel_values[0][0] + pixel_values[0][1]+ pixel_values[0][2]
 
 	#list of the two darkest pixels
 	darkest_pixels = []
 	#assign darkest pixel (the first position in this list) to the first pixel in the image
-	darkest_pixels[0] = pixel_values[0][0]	
-'''	
-	#!!!!!
-	#new strategy
-	#create a list of the sums of the three values of each pixel in the pixel_values list
-	sums = []
-	#for loop to add in the elements
-	for k in range(len(pixel_values)):
-		sums[k] = pixel_values[k][0] + pixel_values[k][1] + pixel_values[k][2]
-
-	#find the minimum value in the sums list
-	#store minimum value in darkest_pixels
-		#we also need to store which pixel that was -> currently storing the sum
-		#i don't know what to do here
-	darkest_pixels.extend(min(sums))
-'''
-	#remove min
-	#find the min again
-	#store second min in darkest_pixels
-	
-	#how to make sure that the two pixels aren't next to each other??
-
-	#OLD STRATEGY
-	#actually how are these arrays stored is it by line or the whole thing is one long one dimensional array (the 2D elements are the 3 values)
-	#for loop through the three dimensions already stored for each pixel
-	#compare values using the sum variable
+	# darkest_pixels[0] = pixel_values[0][0]	
 	min_i = 0
-	min_j = 0
 
 	for i in range(len(pixel_values)):
-		for j in range(len(pixel_values[0])):
 			#sum is equal to the three values for that pixel added together
-			sumup = pixel_values[i][j][0] + pixel_values[i][j][1] + pixel_values[i][j][2]
+			sumup = pixel_values[i][0] + pixel_values[i][1] + pixel_values[i][2]
 			#if this sum is smaller than the current smallest (meaning darkest pixel)
 
 			if sumup < smallest_and_darkest:
 				#reassign smallest_and_darkest to the sum at that position
 				smallest_and_darkest = sumup
 				min_i = i
-				min_j = j
 
+	print(pixel_values[min_i])
 	#once we have found the darkest pixel and stored it in the darkest_pixels
 	#we want to go find the second darkest
 	#for m in range(len(pixel_values)):
