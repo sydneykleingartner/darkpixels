@@ -24,7 +24,7 @@ from matplotlib import pyplot as mp
 def main ():
 
 	
-	pixel_values = misc.imread('color_teeny.png')
+	pixel_values = misc.imread('face_mid.png')
 	# pixel_values = misc.imread('color_teeny.png', 'r')
 	print(pixel_values)
 
@@ -40,7 +40,7 @@ def main ():
 
 	#comparison variable against sum
 	#assign to the first pixel's sum
-	smallest_and_darkest = pixel_values[0][0][0] + pixel_values[0][0][1]+ pixel_values[0][0][2]
+	smallest_and_darkest = long(pixel_values[0][0][0]) + long(pixel_values[0][0][1])+ long(pixel_values[0][0][2])
 
 	#list of the two darkest pixels
 	darkest_pixels = []
@@ -52,7 +52,7 @@ def main ():
 	for i in range(pixel_values.shape[0]):
 		for j in range(pixel_values.shape[1]):
 			#sum is equal to the three values for that pixel added together
-			sumup = pixel_values[i][j][0] + pixel_values[i][j][1] + pixel_values[i][j][2]
+			sumup = long(pixel_values[i][j][0]) + long(pixel_values[i][j][1]) + long(pixel_values[i][j][2])
 			#if this sum is smaller than the current smallest (meaning darkest pixel)
 
 			if sumup < smallest_and_darkest:
@@ -71,7 +71,7 @@ def main ():
 	
 	#show new image
 	plt.imshow(pixel_values)
-	plt.imsave('altered.png', pixel_values)
+	plt.imsave('altered2.png', pixel_values)
 	plt.show()
 
 	#pylab.savefig('face.png')
