@@ -2,7 +2,7 @@
 
 a python program that finds the two darkest pixels in an image and puts an "X" on top of each
 
-what i have done:
+my steps:
 - download homebrew
 - download python conda
 - check that PIL (python image library) is downloaded in the correct version
@@ -21,11 +21,7 @@ what i have done:
     - place the red X around the darkest pixel
       - in the two dimensional array that the pixels are stored in, place red at the pixels around it to form an X
 
-what i still need to do:  
-- make the X's bigger
-- celebrate!
-
-some websites i have gotten help from:
+some websites i got help from:
 
     - https://code.tutsplus.com/tutorials/image-processing-using-python--cms-25772?fbclid=IwAR37XgqfY6xdMTNvbANny-JpNbKkhTR-okyZfaOyr9ZLN2dzjPRfgu4PSC8
     
