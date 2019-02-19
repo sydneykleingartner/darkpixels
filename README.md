@@ -1,6 +1,6 @@
 # darkpixels
 
-a python program that finds the two darkest pixels in an image and puts an "X" on top of each
+a python program that finds the darkest pixel in an image and puts an "X" on top
 
 my steps:
 - download homebrew
