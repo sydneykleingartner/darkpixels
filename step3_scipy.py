@@ -24,7 +24,7 @@ from matplotlib import pyplot as mp
 def main ():
 
 	
-	pixel_values = misc.imread('face_mid.png')
+	pixel_values = misc.imread('grace-hopper.png')
 	# pixel_values = misc.imread('color_teeny.png', 'r')
 	print(pixel_values)
 
@@ -71,7 +71,7 @@ def main ():
 	
 	#show new image
 	plt.imshow(pixel_values)
-	plt.imsave('altered2.png', pixel_values)
+	plt.imsave('altered3.png', pixel_values)
 	plt.show()
 
 	#pylab.savefig('face.png')
