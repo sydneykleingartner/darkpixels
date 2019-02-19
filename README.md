@@ -16,17 +16,13 @@ what i have done:
 - step3.py
     - initialize variables and for loops
     - overall strategy for step 3
+    - for loop through the list to find and store the darkest pixel
+    - replace the color of the darkest pixel with red
+    - place the red X around the darkest pixel
+      - in the two dimensional array that the pixels are stored in, place red at the pixels around it to form an X
 
 what i still need to do:  
-- step3.py
-    - for loop through the list to find the two darkest pixels
-    - store these two pixels (that are not next to each other) in an array
-            -i'm having SO much trouble with this -> would it be more efficient to go through looking for the darkest first and then the second darkest?
-            -how do i know that the two pixels aren't next to each other?
-            -need to work more on python list syntax & function
-    - for each, replace the color of that specific pixel with red
-    - as well, place the X's around each
-      - in the two dimensional array that the pixels are stored in, place red at the pixels around it to form an X
+- make the X's bigger
 - celebrate!
 
 some websites i have gotten help from:
@@ -40,21 +36,5 @@ some websites i have gotten help from:
     - https://developers.google.com/edu/python/lists
     
     - https://www.programiz.com/python-programming/list
-    
-    
-   current questions:
-        - how do i reference one specific value in a pixel?
-                ex. we print out the three numbers in (124, 127, 135) BUT what i specifically wanted to reference 124?
-        - storing the second best pixel
-                - what is the best way to do this? most efficient versus least complicated (both are pretty complicated in my brain right now though)
-                        - using two for loops feels quite inefficient
-                            - you would need to scan through the sums to find the minimum and then scan through again looking for the second smallest sum, meanwhile storing these in an effective way
-                
-    brainstorming:
-        - if the darker the pixel, the smaller the sum of the numbers
-                THEN: 
-                    - add together the #'s in the pixel
-                    - find the two smallest sums
-                            - would this always work? or is it close enough for now?
    
    
